@@ -8,9 +8,9 @@ ssh_options[:forward_agent] = true
 set :user, "caycedes"
 set :password, "XpIcWtFHM"
 set :domain, "caycedes.caycedesign.com"
+set :application, "caycedesign"
 set :deploy_to, "/home/caycedes/rails_apps/#{application}"
 set :mount_path, "/"
-set :application, "caycedesign"
 set :scm, :git
 set :repository, "git@github.com:terryconejr/caycedesign.git"
 set :branch, "master"
