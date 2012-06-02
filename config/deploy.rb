@@ -16,6 +16,11 @@ set :repository, "git@github.com:terryconejr/caycedesign.git"
 set :branch, "master"
 set :deploy_via, :remote_cache
 
+role :web, "caycedesign.com"                          # Your HTTP server, Apache/etc
+role :app, "caycedesign.com"                          # This may be the same as your `Web` server
+role :db,  "caycedesign.com", :primary => true # This is where Rails migrations will run
+# role :db,  "your slave db-server here"
+
 after "deploy", "deploy:bundle_gems"
 after "deploy:bundle_gems", "deploy:restart"
 
