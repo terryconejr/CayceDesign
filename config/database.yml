@@ -37,6 +37,6 @@ production:
   reconnect: false
   database: caycedes_blog
   pool: 5
-  username: cayce_terry
+  username: caycedes_terry
   password: groovy269!
-  socket: /tmp/mysql.sock
+  host: localhost
