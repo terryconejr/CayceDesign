@@ -12,13 +12,13 @@ set :application, "caycedesign"
 set :deploy_to, "/home/caycedes/rails_apps/#{application}"
 set :mount_path, "/"
 set :scm, :git
-set :repository, "git@github.com:terryconejr/caycedesign.git"
+set :repository, "git@github.com:terryconejr/CayceDesign.git"
 set :branch, "master"
 set :deploy_via, :remote_cache
 set :use_sudo, false
-role :web, "199.204.47.194"                          # Your HTTP server, Apache/etc
-role :app, "199.204.47.194"                          # This may be the same as your `Web` server
-role :db,  "199.204.47.194", :primary => true # This is where Rails migrations will run
+role :web, "caycedesign.com"                          # Your HTTP server, Apache/etc
+role :app, "caycedesign.com"                          # This may be the same as your `Web` server
+role :db,  "caycedesign.com", :primary => true # This is where Rails migrations will run
 # role :db,  "your slave db-server here"
 
 after "deploy", "deploy:bundle_gems"
