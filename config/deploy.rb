@@ -8,14 +8,14 @@ ssh_options[:forward_agent] = true
 set :user, "caycedes"
 set :password, "XpIcWtFHM"
 set :domain, "caycedes.caycedesign.com"
-set :application, "caycedesign"
+set :application, "199.204.47.194"
 set :deploy_to, "/home/caycedes/rails_apps/#{application}"
 set :mount_path, "/"
 set :scm, :git
 set :repository, "git@github.com:terryconejr/caycedesign.git"
 set :branch, "master"
 set :deploy_via, :remote_cache
-
+set :use_sudo, false
 role :web, "caycedesign.com"                          # Your HTTP server, Apache/etc
 role :app, "caycedesign.com"                          # This may be the same as your `Web` server
 role :db,  "caycedesign.com", :primary => true # This is where Rails migrations will run
