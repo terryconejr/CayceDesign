@@ -2,7 +2,7 @@ require 'capistrano'
 require 'capistrano-vexxhost'
 require 'bundler/capistrano'
 
-ssh_options[:forward_agent] = true
+#ssh_options[:forward_agent] = true
 
 # Account Settings
 set :user, "caycedes"
